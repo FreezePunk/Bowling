@@ -53,6 +53,20 @@ class bowlingTest {
 		assertEquals(24,game.score());
 	}
 	
+	@Test 
+	void Niveau4(){
+		int[] rolls= {1,2,10,0,10,4,2,0,10,6,2,0,10,6,4,8,2,2,7};
+		for (int i=0;i<rolls.length;i++)
+			game.roll(rolls[i]);
+		assertEquals(122,game.score());
+	}
 	
+	@Test 
+	void Niveau5(){
+		int[] rolls= {1,2,10,0,10,4,2,0,10,6,2,0,10,6,4,8,2,2,8,8};
+		for (int i=0;i<rolls.length;i++)
+			game.roll(rolls[i]);
+		assertEquals(131,game.score());
+	}
 	
 }
