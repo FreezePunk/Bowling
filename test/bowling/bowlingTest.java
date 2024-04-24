@@ -40,9 +40,17 @@ class bowlingTest {
 	@Test
 	void Niveau2() {
 		int[] rolls= {7,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-		for (int i=0;i<10;i++)
+		for (int i=0;i<rolls.length;i++)
 			game.roll(rolls[i]);
 		assertEquals(18,game.score());
+	}
+	
+	@Test
+	void Niveau3() {
+		int[] rolls= {10,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+		for (int i=0;i<rolls.length;i++)
+			game.roll(rolls[i]);
+		assertEquals(24,game.score());
 	}
 	
 	
